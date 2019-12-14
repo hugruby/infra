@@ -6,7 +6,7 @@
 	"builders":[
 	{
 		"type":"digitalocean",
-		"api_token":"{{user `secret_token`}}",
+		"api_token":"2b8ba1b754c2bd2a4ad08b51dce0e1591a1360416c1997e90700274477dbb112",
 		"image":"coreos-stable",
 		"region":"SFO2",
 		"size":"512mb",
