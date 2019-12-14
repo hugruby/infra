@@ -1,12 +1,12 @@
 {
 	"variables":{
-		"build_number":"{{env `ARTIFACT:ID`}}",
-		"secret_token":"{{env `DIGITALOCEAN_TOKEN`}}"
+		"build_number":"{{env `ARTIFACT_ID`}}",
+		"secret_token":"{{env `DIGITALOCEAN_TOKEN}}"
 	},
 	"builders":[
 	{
 		"type":"digitalocean",
-		"api_token":"2b8ba1b754c2bd2a4ad08b51dce0e1591a1360416c1997e90700274477dbb112",
+		"api_token":"{{user `secret_token`}}",
 		"image":"coreos-stable",
 		"region":"SFO2",
 		"size":"512mb",
