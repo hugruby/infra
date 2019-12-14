@@ -1,7 +1,7 @@
 {
 	"variables":{
-		"build_number":"{{env 'ARTIGACT:ID'}}",
-		"secret_token":"{{env 'DIGITALOCEAN_TOKEN'}}"
+		"build_number":"{{env `ARTIFACT:ID`}}",
+		"secret_token":"{{env `DIGITALOCEAN_TOKEN`}}"
 	},
 	"builders":[
 	{
